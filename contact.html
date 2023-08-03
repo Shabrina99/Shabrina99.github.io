@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Student HelpSite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poopins:wght@100;200;300;400;500;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" herf="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awsome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="college.html">Colleges</a></li>
+                    <li><a href="view.html">Overview</a></li>
+                    <li><a href="facilities.html">Our Facilities</a></li>
+                    <li><a href="mission.html">Our Mission</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<h1>Contact Us</h1>
+</section>
+<!--------------------------------contact us---------------------------------------->
+<section class="contact-us">
+    <div class="row">
+<div class="contact-col">
+    <div>
+    <i class="fa fa-home"></i>
+     
+    <span>
+        <h5>abcd Road,xyz Building</h5>
+        <p>Brooklyn,New York</p>
+    </span>
+    </div>
+    <div>
+    <i class="fa fa-phone"></i>
+    <span>
+        <h5>0123456789</h5>
+        <p>Monday to Thursday,10am to 5pm</p>
+    </span>
+    </div>
+    <div>
+    <i class="fa fa-envelope-o"></i>
+    <span>
+        <h5>info@gmail.com</h5>
+        <p>Email us your query</p>
+    </span>
+    </div>
+   </div>
+  <div class="contact-col">
+    <form action="form-handler.php" method="post">
+        <input type="text" name="name" placeholder="Enter Your Name"required>
+        <input type="email" name="email" placeholder="Enter Your Email Address"required>
+        <input type="text" name="subject" placeholder="Enter Your Subject"required>
+        <textarea  rols="8" name="message"  placeholder="Message" required></textarea>
+        <button type="submit" class="h-btn red-btn">Send Message</button>
+
+    </form>
+
+
+ </div>
+</div>
+
+</select>
+
+
+<!-----------------------------Footer------------------------------------>
+<section class="footer">
+
+    <p><b>Made by Shabrina Yesmin</b></p>
+</section>
+
+
+<!---------------------javaScript------------------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

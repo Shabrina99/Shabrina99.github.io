@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Student HelpSite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" herf="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="college.html">Colleges</a></li>
+                    <li><a href="view.html">Overview</a></li>
+                    <li><a href="facilities.html">Our Facilities</a></li>
+                    <li><a href="mission.html">Our Mission</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<h1>Our Facilities</h1>
+</section>
+<!-----------------------Facilities------------------------------->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Take our Facilities </p>
+    <div class="row">
+        <div class="facilities-col">
+        <img src="images/M.jpg">
+        <h3> APPLY INFORMATION</h3>
+        <p>Use this section to learn about the prosses of Transfer</p>
+        </div>
+        
+        <div class="facilities-col">
+            <img src="images/FAQ.jpg">
+            <h3> FAQ</h3>
+            <p>Use this section to learn about the prosses of Transfer</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/1.jpg">
+            <h3> RESOURCES </h3>
+            <p>Use this section to learn about the prosses of Transfer</p>
+        </div>
+    </div>
+
+</section>
+
+<!-----------------------------Footer------------------------------------>
+<section class="footer">
+
+    <p><b>Made by Shabrina Yesmin</b></p>
+</section>
+
+
+<!---------------------javaScript------------------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
